@@ -1,3 +1,23 @@
 <p>
-  home works!
+ {{homeTitle}}
 </p>
+<ng-content></ng-content>
+
+<!-- property binding -->
+<input [value]="myString"/>
+<input [attr.required]="myBoolean"/>
+<button (click)="alertMe(ninja.name)" type="button">Click Me</button>
+<br>
+<br>
+<!-- 2 way data binding -->
+<label>Ninja Name</label>
+<input [(ngModel)]="ninja.name">
+<label>Ninja Belt</label>
+<input [(ngModel)]="ninja.belt">
+
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
+
+
+<p>{{ninjacks.name}}</p>
+<p>{{ninjacks.belt}}</p>
