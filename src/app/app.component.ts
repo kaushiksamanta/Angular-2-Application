@@ -10,8 +10,15 @@ import { HomeComponent } from './home/home.component';
 
 export class AppComponent {
   title = 'app works!';
+
   ninjacks = {
     name:'asda',
     belt:'afa'
+  };
+
+  yell(e){
+    alert("i am yelling");
+    console.log(e);
   }
+
 }

@@ -10,5 +10,6 @@
 </header>
 
 <section id="main">
-  <app-home [ninja2]="ninjacks">sdfdsf</app-home>
+  <app-home [ninja2]="ninjacks" (onYell)="yell($event)">sdfdsf</app-home>
+  <app-directory></app-directory>
 </section>
