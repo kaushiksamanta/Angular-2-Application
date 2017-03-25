@@ -26,3 +26,24 @@
 <br>
 <button (click)="fireYellEvent($event)">Pass data to parent</button>
 
+<pre>{{hobbies | json}}</pre>
+
+<hr>
+<form (submit)="addHobby(hobby.value)">
+  <label> Add Hobby:</label>
+  <input type="text" #hobby />
+  <br>
+</form>
+<hr>
+<input type="checkbox" [(ngModel)]="showhobbies">
+<ul *ngIf="showhobbies">
+  <li *ngFor="let hobby of hobbies; let i = index">
+    {{hobby}} <button (click)="deleteHobby(i)">x</button>
+  </li>
+</ul>
+
+<hr>
+<br>
+<h3 *ngFor="let posts of allposts">
+    {{ posts.body}}
+</h3>

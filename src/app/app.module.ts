@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 
+//import {routing} from '../app/routes/app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { DirectoryComponent } from './directory/directory.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    //routing
   ],
   providers: [],
   bootstrap: [AppComponent]
